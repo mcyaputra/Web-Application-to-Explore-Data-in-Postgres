@@ -1,15 +1,3 @@
-### README
-
-## Author
-
-Nathan Nguyen (14238543)
-
-Michael Yaputra (24619001)
-
-Daniel Alexander (24591214)
-
-Anna Huynh (14387068)
-
 ## Description
 
 This is a Streamlit web application in Python 3.8.2 that is
