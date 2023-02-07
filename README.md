@@ -50,8 +50,8 @@ Overall, Explore, Numeric, Text and Date.
     visuals on the distribution of the values with the details further
     provided in the following table.
 
-<p align="center">
-    <img src='Images/Diagram.png">
+
+<img src='/Images/Diagram.png">
 
 ## How to Setup
 
