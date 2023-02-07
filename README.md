@@ -17,11 +17,11 @@ Overall, Explore, Numeric, Text and Date tabs.
     schema information such as data types and primary/foreign key of
     each column in the table.
 
-2.  **Explore tab**: In this tab, users will be able to explore the rows
+2.  ***Explore tab***: In this tab, users will be able to explore the rows
     and columns of the dataset. It provides options for users to see the top or bottom rows and random samples.
     Users can also adjust the number of rows they want to see at a given time.
 
-3.  **Numeric tab**: provides more detailed information of the dataset,
+3.  ***Numeric tab***: provides more detailed information of the dataset,
     displaying statistical information of numeric columns. Users will
     be able to select numeric columns to analyze, when expanded,
     several statistical information will be shown such as total unique
@@ -31,7 +31,7 @@ Overall, Explore, Numeric, Text and Date tabs.
     containing more detailed information on most frequently found
     values.
 
-4.  **Text tab**: similar to the numeric tab, contains statistical
+4.  ***Text tab***: similar to the numeric tab, contains statistical
     information of text columns. Users will also be able to select the
     text columns to analyze and when expanded, statistical information
     shown includes the total number of unique and missing values, lower
@@ -40,7 +40,7 @@ Overall, Explore, Numeric, Text and Date tabs.
     column, with more detailed information displayed in the following
     table.
 
-5.  **Date tab**: similar to numeric and text tabs, holds statistical
+5.  ***Date tab***: similar to numeric and text tabs, holds statistical
     details on date time columns in the dataset. Users select columns
     they are interested in and statistical data will be provided such as
     min/max dates, number of weekday/weekend dates, missing/unique
