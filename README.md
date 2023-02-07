@@ -11,16 +11,15 @@ After successful connection, the web app will display:
 The 5 tabs containing information about the table selected are
 Overall, Explore, Numeric, Text and Date tabs.
 
-1.  **Overall tab**: contains general overview of the dataset
+1.  ***Overall tab***: contains general overview of the dataset
     including number of rows and columns, table name,
-    total duplicated rows and missing values. It also display
+    total duplicated rows and missing values. It also displays
     schema information such as data types and primary/foreign key of
     each column in the table.
 
 2.  **Explore tab**: In this tab, users will be able to explore the rows
-    and columns of the dataset. It provides options for users to select
-    whether they want to see the top or bottom rows and random samples.
-    Users can also adjust how many rows they want to see at a time.
+    and columns of the dataset. It provides options for users to see the top or bottom rows and random samples.
+    Users can also adjust the number of rows they want to see at a given time.
 
 3.  **Numeric tab**: provides more detailed information of the dataset,
     displaying statistical information of numeric columns. Users will
@@ -52,6 +51,8 @@ Overall, Explore, Numeric, Text and Date tabs.
 <img src='/Images/Diagram.png'>
 
 ## How to Setup
+
+1. Install Docker from www.docker.com
 
 In order for the app to connect to the database, we have to figure out
 the connection details including the database name, username that has
