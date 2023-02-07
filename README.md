@@ -50,6 +50,8 @@ Overall, Explore, Numeric, Text and Date.
     visuals on the distribution of the values with the details further
     provided in the following table.
 
+![](Diagram.png)
+
 ## How to Setup
 
 In order for the app to connect to the database, we have to figure out
