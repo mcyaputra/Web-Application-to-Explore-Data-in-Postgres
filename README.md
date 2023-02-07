@@ -1,20 +1,19 @@
 ## Description
 
-This is a Streamlit web application in Python 3.8.2 that is
-containerised with Docker. It will explore the content of a Postgres
-database and analyse selected tables and columns. The first dropdown
-“Streamlit Session State” displays the current session state, and this
-is where you can debug the solution. The following menu connects you to
-a database and allows you to select a table. Finally 5 different tabs
-will allow you to analyse and view the datasets, it will display
-information about any text columns, numeric columns and date columns.
+Containerised (Docker) interactive web application (Streamlit) built on Python to help users explore their data or tables. The web application helps user connects to a database (Postgres), allowing user to access and display the content of the database.
 
-The 5 tabs containing information about the database selected are
-Overall, Explore, Numeric, Text and Date.
+After successful connection, the web app will display:
 
-1.  **Overall tab**: contains the general overview of the dataset which
-    includes number of rows, number of columns, name of the table,
-    number of duplicated rows and missing values. It also provides
+1. Menu to connect to a database
+2. Dropdown to select available tables in database
+3. 5 tabs: Overall, Explore, Numeric, Text and Date
+
+The 5 tabs containing information about the table selected are
+Overall, Explore, Numeric, Text and Date tabs.
+
+1.  **Overall tab**: contains general overview of the dataset
+    including number of rows and columns, table name,
+    total duplicated rows and missing values. It also display
     schema information such as data types and primary/foreign key of
     each column in the table.
 
@@ -24,11 +23,11 @@ Overall, Explore, Numeric, Text and Date.
     Users can also adjust how many rows they want to see at a time.
 
 3.  **Numeric tab**: provides more detailed information of the dataset,
-    it contains statistical information of numeric columns. Users will
-    be able to select the numeric columns to analyze, when expanded,
-    several statistical data will be shown including total unique
+    displaying statistical information of numeric columns. Users will
+    be able to select numeric columns to analyze, when expanded,
+    several statistical information will be shown such as total unique
     values, missing values, negative values, standard deviation, min/max
-    and median values. Histogram is also displayed to show the
+    and median values. Histogram will show the
     distribution of the values in the column as well as a table
     containing more detailed information on most frequently found
     values.
