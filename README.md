@@ -2,7 +2,7 @@
 
 Containerised (Docker) interactive web application (Streamlit) built on Python to help users explore their data or tables. The web application helps user connects to a database (Postgres), allowing user to access and display the content of the database.
 
-After successful connection, the web app will display:
+After successful connection, web app will display:
 
 1. Menu to connect to a database
 2. Dropdown to select available tables in database
@@ -50,50 +50,23 @@ Overall, Explore, Numeric, Text and Date tabs.
 
 <img src='/Images/Diagram.png'>
 
-## How to Setup
+## Setting up
 
 1. Install Docker from www.docker.com
 
-In order for the app to connect to the database, we have to figure out
-the connection details including the database name, username that has
-access to the database, the password corresponding, the host name, and
-the port number. It is also important to make sure that the database has
-at least one schema and one table, otherwise, the application will not
-be able to produce any result.
+2. Go to: https://github.com/mcyaputra/Postgres-Docker-Streamlit-Database-Explorer-Web-App
+3. Go to "Code" drop down and select "Download Zip" - This will download the entire repository to your local machine
+OR
+4. In terminal, type: git clone https://github.com/mcyaputra/Postgres-Docker-Streamlit-Database-Explorer-Web-App.git - This will also download the entire repository to your local machine
 
-## How to Run the Program
+5. Set terminal working directory to the project folder
 
-Start by clicking on the docker compose file and run the compose up command
+## Starting the web app
 
-From there it should establish both sessions and you log into the ip address 0.0.0.0:8501. If docker does not work, follow below step. If not keep going to connect the database section
+1. In terminal, type "docker compose up -d"
+2. Go to browser, type "localhost:8501"
 
-**If docker is not working:** Open terminal and run: streamlit run
-“pathway”
-
-To connect the database, open the expander widget labeled “Streamlit
-application for performing data exploration on a database”:
-
-![](2.png?raw=true)
-
-Then put in all of the postgresql connection details to the form, all of
-the details must be accurate, otherwise the connection won’t be
-established.
-
-![](3.png)
-
-If all of the required information is correct, then clicking the
-“connect” button will result in a success message **“Connection to
-database established”**.
-
-![](4.png)
-
-Once the connection has been established, then a dropdown menu will pop
-up containing tables to be choosed. The next step then is to choose the
-table that you want to analyze.
-
-## Project Structure
-
-![](1.png)
+Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Dockerfile and Dockercompose will set up required environment for the application to run on your machine.
 
 ## Citations
 
