@@ -62,12 +62,11 @@ OR
 
 4. In terminal, type: git clone https://github.com/mcyaputra/Postgres-Docker-Streamlit-Database-Explorer-Web-App.git - This will also download the entire repository to your local machine
 
-5. Set terminal working directory to the project folder
-
 ## Starting the web app
 
-1. In terminal, type "docker compose up -d"
-2. Go to browser, type "localhost:8501"
+1. Set terminal working directory to the project folder
+2. In terminal, type "docker compose up -d"
+3. Go to browser, type "localhost:8501"
 
 Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Dockerfile and Dockercompose will set up required environment for the application to run on your machine.
 
