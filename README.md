@@ -65,11 +65,11 @@ OR
 
 ## Starting the web app
 
-1. Set terminal working directory to the project folder/location
-2. In terminal, type "docker compose up -d"
+1. In terminal, set working directory to the project folder/location
+2. Type "docker compose up -d" in your terminal
 3. Go to browser, type "localhost:8501"
 
-Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Dockerfile and Dockercompose will set up required environment for the application to run on your machine.
+Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Dockerfile and DockerCompose will set up required environment for the application to run on your machine.
 
 ## Citations
 
