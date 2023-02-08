@@ -61,7 +61,7 @@ OR
 
 
 4. In terminal, type: git clone https://github.com/mcyaputra/Postgres-Docker-Streamlit-Database-Explorer-Web-App.git - This will also download the entire repository to your local machine
-5. Save/move project in your designated folder
+5. Save/move project to your designated folder
 
 ## Starting the web app
 
