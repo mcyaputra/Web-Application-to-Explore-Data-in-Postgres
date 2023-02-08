@@ -58,6 +58,8 @@ Overall, Explore, Numeric, Text and Date tabs.
 3. Go to "Code" drop down and select "Download Zip" - This will download the entire repository to your local machine
 
 OR
+
+
 4. In terminal, type: git clone https://github.com/mcyaputra/Postgres-Docker-Streamlit-Database-Explorer-Web-App.git - This will also download the entire repository to your local machine
 
 5. Set terminal working directory to the project folder
