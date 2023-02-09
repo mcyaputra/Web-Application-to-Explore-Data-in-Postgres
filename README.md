@@ -23,7 +23,8 @@ Overall, Explore, Numeric, Text and Date tabs.
 
     <img src='/Images/3rd Page.png'>
 
-    
+&nbsp;
+&nbsp;
 
 2.  ***Explore tab***: In this tab, users will be able to explore the rows
     and columns of the dataset. It provides options for users to see the top or bottom rows and random samples.
