@@ -71,8 +71,6 @@ Overall, Explore, Numeric, Text and Date tabs.
 
     &nbsp;
 
-<img src='/Images/Diagram.png'>
-
 ## Setting up
 
 1. Install Docker from www.docker.com
@@ -98,6 +96,9 @@ Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Doc
 
 
 ## Structure
+
+<img src='/Images/Diagram.png'>
+&nbsp;
 
 - README.md: Description about the project such as detailed information on the program, project structure, how to setup or how to run the program, etc.
 - requirements.txt: List of python packages required to run the program
