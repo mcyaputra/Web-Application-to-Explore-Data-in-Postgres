@@ -71,6 +71,33 @@ OR
 
 Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Dockerfile and DockerCompose will set up required environment for the application to run on your machine.
 
-## Citations
+## Structure
 
-<Mention authors and provide links code you source externally>
+- README.md: Description about the project such as detailed information on the program, project structure, how to setup or how to run the program, etc.
+- requirements.txt: List of python packages required to run the program
+- Dockerfile: Command/file to build Streamlit Docker image 
+- docker-compose.yml: Command/file to run docker images simultenously and containerized and run the project
+- app/
+  - streamlit_app.py: Application entry point, used to starts and configures Streamlit
+- src/
+  - config.py: Setting app's configuration, ex: session states
+  - database/
+    - display.py: Display database connection menu, connect to the database and display table
+    - logics.py: Contains a python class that manages connection to the database
+    - queries.py: SQL queries to extract tables, schema and contents of database
+  - dataframe/
+    - display.py: Displays overall content and schema information of a selected table.
+    - logics.py: Contains a Python class that manages tables and calculations for "Overall" and "Explore" tabs using data loaded from Postgres database
+    - queries.py: SQL queries to extract numeric, text and datetime columns of selected table for logics.py and display.py
+  - serie_date/
+    - display.py: Display table and information shown in "Date" tab
+    - logics.py: Contains a Python class that manages manages tables and calculations for Date tabs using data loaded from Postgres database
+    - queries.py: SQL queries to extract "Datetime" data type from the database for logics.py and display.py
+  - serie_numeric/
+    - display.py: Display table and information shown in "Numeric" tab
+    - logics.py: Contains a Python class that manages tables and calculations for "Numeric" tabs using data loaded from Postgres database
+    - queries.py: SQL queries to extract number of negative values, standard deviation and unique values of each column of the selected table for logics.py and display.py
+  - serie_text/
+    - display.py: Display table and information shown in "Text" tab
+    - logics.py: Contains a Python class that manages tables and calculations for "Text" tabs using data loaded from Postgres database
+    - queries.py: SQL queries to extract number of missing values, mode, and number of records with only alphabetical characters of each columns of the selected table for logics.py and display.py
