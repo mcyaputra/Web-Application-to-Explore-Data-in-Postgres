@@ -71,6 +71,12 @@ OR
 
 Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Dockerfile and DockerCompose will set up required environment for the application to run on your machine.
 
+## Screenshots of the Web App Running
+
+<img src='/Images/Main Page.png'>
+<img src='/Images/2nd Page.png'>
+<img src='/Images/3rd Page.png'>
+
 ## Structure
 
 - README.md: Description about the project such as detailed information on the program, project structure, how to setup or how to run the program, etc.
