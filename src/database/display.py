@@ -9,6 +9,7 @@ def display_db_connection_menu():
     Description
     --------------------
     -> display_db_connection_menu (function): Function that displays the menu for connecting to a database and triggers the database connection
+
     --------------------
     Pseudo-Code
     --------------------
@@ -76,11 +77,13 @@ def connect_db():
     Description
     --------------------
     -> connect_db (function): Function that connects to a database and instantiate a PostgresConnector class accordingly
+
     --------------------
     Pseudo-Code
     --------------------
     -> Initiate psycopg2 connection using the values stored in the session state
     -> Return the active connection.
+
     """
 
     #initiating class object
@@ -104,6 +107,7 @@ def display_table_selection():
     Description
     --------------------
     -> display_table_selection (function): Function that displays the selection box for selecting the table to be analysed and triggers the loading of data (read_data())
+
     --------------------
     Pseudo-Code
     --------------------
@@ -115,7 +119,6 @@ def display_table_selection():
     -> If read_data is not None then Update session state for 'data' to be string ' Read Data Success'
     """
     
-
     #Initiate class object data
     data=connect_db()
     
@@ -128,5 +131,18 @@ def display_table_selection():
         
     table_list_option=st.selectbox('Select a table name',table_list,key='table_choice',on_change=split_schema)
 
-    read_data()
     
+    
+
+    #triggers the loading of data (read_data())
+
+    read_data()
+
+
+
+
+
+
+
+
+

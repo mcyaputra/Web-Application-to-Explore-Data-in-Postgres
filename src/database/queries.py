@@ -1,3 +1,4 @@
+
 def get_tables_list_query():
 
         """
@@ -19,6 +20,7 @@ def get_table_data_query(schema_name, table_name):
         """
         Description
         -> get_table_data_query (method): Function that returns the query used for extracting the content of a Postgres table
+
         Pseudo-Code
         
         -> Create and object containing the query in string type
@@ -42,8 +44,10 @@ def get_table_schema_query(schema_name, table_name):
 
 
         """
+
         Description
         -> get_table_schema_query (method): Function that returns the query used for extracting the list of columns from a Postgres table and their information
+
         Pseudo-Code
     
         -> Create and object containing the query in string type with f string to input the function's argument to the string

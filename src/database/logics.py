@@ -1,7 +1,6 @@
 import psycopg2
 from psycopg2 import OperationalError
 import pandas as pd
-import numpy as np
 
 from src.database.queries import get_tables_list_query, get_table_data_query, get_table_schema_query
 
@@ -12,6 +11,7 @@ class PostgresConnector:
     Description
     --------------------
     -> PostgresConnector (class): Class that manages the connection to a Postgres database
+
     --------------------
     Attributes
     --------------------
@@ -51,6 +51,7 @@ class PostgresConnector:
         Description
         --------------------
         -> open_connection (method): Class method that creates an active connection to a Postgres database
+
         --------------------
         Pseudo-Code
         --------------------
@@ -80,12 +81,14 @@ class PostgresConnector:
         Description
         --------------------
         -> close_connection (method): Class method that closes an active connection to a Postgres database
+
         --------------------
         Pseudo-Code
         --------------------
         -> create an object to initiate psycopg2 connection to the database
         -> close the connection
         -> return connection closed or not, boleean true means connection is closed
+
         """
 
 
@@ -101,6 +104,7 @@ class PostgresConnector:
         Description
         --------------------
         -> open_cursor (method): Class method that creates an active cursor to a Postgres database
+
         --------------------
         Pseudo-Code
         --------------------
@@ -120,6 +124,7 @@ class PostgresConnector:
         Description
         --------------------
         -> close_cursor (method): Class method that closes an active cursor to a Postgres database 
+
         --------------------
         Pseudo-Code
         --------------------
@@ -139,14 +144,17 @@ class PostgresConnector:
         Description
         --------------------
         -> run_query (method): Class method that executes a SQL query and returns the result as a Pandas dataframe
+
         --------------------
         Pseudo-Code
         --------------------
+
         -> initiate a connection cursor
         -> execute the query with the cursor
         -> fetch the data of the query
         -> close the cursor using close_cursor function defined
         -> close connection using close_connection function defined
+
         -> get the column name since psycopg2 query does not import the column name simultaneously
         -> assign the queries from the cursor to pandas dataframe
         -> rename the panda dataframe column to the column names that have been extracted separately
@@ -162,9 +170,9 @@ class PostgresConnector:
         #Attaching column names on panda data frame
         
         column_names=[ column[0] for column in cursor.description ]
+        
 
-
-        df=pd.DataFrame(np.array(fetch))
+        df=pd.DataFrame(fetch)
         df.columns= column_names
         return df
 
@@ -177,11 +185,13 @@ class PostgresConnector:
         Description
         --------------------
         -> list_tables (method): Class method that extracts the list of available tables using a SQL query (get_tables_list_query())
+
         --------------------
         Parameters
         --------------------
         => To be filled by student
         -> name (type): description
+
         --------------------
         Pseudo-Code
         --------------------
@@ -205,6 +215,7 @@ class PostgresConnector:
         Description
         --------------------
         -> load_table (method): Class method that load the content of a table using a SQL query (get_table_data_query())
+
         --------------------
         Pseudo-Code
         --------------------
@@ -226,6 +237,7 @@ class PostgresConnector:
         Description
         --------------------
         -> get_table_schema (method): Class method that extracts the schema information of a table using a SQL query (get_table_schema_query())
+
         --------------------
         Pseudo-Code
         --------------------
@@ -240,3 +252,6 @@ class PostgresConnector:
         query=get_table_schema_query(schema_name, table_name)
        
         return self.run_query(query)
+        
+
+
