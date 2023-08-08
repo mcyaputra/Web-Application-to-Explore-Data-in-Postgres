@@ -1,4 +1,4 @@
-## Description
+## 📝 Description
 Hi All!
 
 We will create containerised (Docker) interactive web application (Streamlit) built on Python to help users explore their data or tables. The web application helps user connects to a database (Postgres), allowing user to access and display the content of the database.
@@ -78,7 +78,7 @@ Overall, Explore, Numeric, Text and Date tabs.
 
     &nbsp;
 
-## Setting up
+## ⚙️ Setting up
 
 1. Install Docker from www.docker.com
 
@@ -91,7 +91,7 @@ OR
 4. In terminal, type: git clone https://github.com/mcyaputra/Postgres-Docker-Streamlit-Database-Explorer-Web-App.git - This will also download the entire repository to your local machine
 5. Save/move project to your designated folder
 
-## Starting the web app
+## 💻 Starting the web app
 
 1. In terminal, set working directory to the project folder/location
 2. Type "docker compose up -d" in your terminal
@@ -102,7 +102,7 @@ Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Doc
 <img src='/Images/Main Page.png'>
 
 
-## Structure
+## 🔗 Structure
 
 <img src='/Images/Diagram.png'>
 &nbsp;
