@@ -1,6 +1,13 @@
 ## Description
+Hi All!
 
-Containerised (Docker) interactive web application (Streamlit) built on Python to help users explore their data or tables. The web application helps user connects to a database (Postgres), allowing user to access and display the content of the database.
+We will create containerised (Docker) interactive web application (Streamlit) built on Python to help users explore their data or tables. The web application helps user connects to a database (Postgres), allowing user to access and display the content of the database.
+
+Tools:
+1. PostgreSQL
+2. Docker
+3. Streamlit (Python library)
+4. Python
 
 After successful connection, web app will display:
 
@@ -128,3 +135,17 @@ Note: Pre installation of Python, Postgres, Streamlit etc are not necessary. Doc
     - display.py: Display table and information shown in "Text" tab
     - logics.py: Contains a Python class that manages tables and calculations for "Text" tabs using data loaded from Postgres database
     - queries.py: SQL queries to extract number of missing values, mode, and number of records with only alphabetical characters of each columns of the selected table for logics.py and display.py
+
+## 👨 Feedback/Ideas? Lets connect!
+
+I would love to hear feedbacks or ideas from you! Or just simply connect and chat, feel free to contact me on:
+
+<a href="https://www.linkedin.com/in/michaelyaputra/">
+    <img align="left" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"/>
+
+</a>
+
+<a href="https://github.com/mcyaputra">
+    <img align="left" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+
+</a>
